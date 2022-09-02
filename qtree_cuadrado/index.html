@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>QuadTree </title>
+<script src="p5.js"></script>
+<script src="quadtree.js"></script>
+<script src="sketch.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="Numero de puntos ..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+            alert(inputVal);
+        }
+    </script>
+</body>
+</html>
