@@ -4,7 +4,6 @@ class Point { //clase punto
     this.y = y;
   }
 }
-
 class Rectangle {//clase rectangulo
   constructor(x, y, w, h) {
     this.x = x;
@@ -26,7 +25,6 @@ class Rectangle {//clase rectangulo
       range.y + range.h < this.y - this.h);
   }
 }
-
 class QuadTree { //clase quadtree
   constructor(boundary, n) {
     this.boundary = boundary;
@@ -34,7 +32,6 @@ class QuadTree { //clase quadtree
     this.points = [];
     this.divided = false;
   }
-
   subdivide() {
     let x = this.boundary.x;
     let y = this.boundary.y;
@@ -99,11 +96,9 @@ class QuadTree { //clase quadtree
       this.northwest.show();
       this.southeast.show();
       this.southwest.show();
-
     }
-
     for (let p of this.points) {
-      strokeWeight(4);
+      strokeWeight(3);
       point(p.x, p.y);
     }
   }
