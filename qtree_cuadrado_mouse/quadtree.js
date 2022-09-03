@@ -4,7 +4,6 @@ class Point { //clase punto
     this.y = y;
   }
 }
-
 class Rectangle {//clase rectangulo
   constructor(x, y, w, h) {
     this.x = x;
@@ -34,7 +33,6 @@ class QuadTree { //clase quadtree
     this.points = [];
     this.divided = false;
   }
-
   subdivide() {
     let x = this.boundary.x;
     let y = this.boundary.y;
@@ -50,13 +48,10 @@ class QuadTree { //clase quadtree
     this.southwest = new QuadTree(sw, this.capacity);
     this.divided = true;
   }
-
   insert(point) {
     if (!this.boundary.contains(point)) {
       return;
     }
-
-
     if (this.points.length < this.capacity) {
       this.points.push(point);
     } else {
